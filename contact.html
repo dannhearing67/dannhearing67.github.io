@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | Dann Hearing Center | Norwalk, CT</title>
+
+  <meta name="description" content="Contact Dann Hearing Center at 650 West Ave in Norwalk, Connecticut. Call 203-866-3838 or request an appointment online.">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #243746;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e9ed;
+    }
+
+    .header-inner {
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo img {
+      width: 180px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #152d3e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #0878c9;
+    }
+
+    .phone-link {
+      color: #0878c9;
+    }
+
+    .page-hero {
+      background: linear-gradient(135deg, #f2f9fd, #e8f5fc);
+      padding: 75px 20px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #f58200;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .page-hero h1 {
+      color: #0868ad;
+      font-size: 46px;
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .page-hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 21px;
+      color: #314b5e;
+    }
+
+    .contact-section {
+      padding: 75px 20px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .contact-card {
+      border: 1px solid #dce5eb;
+      border-radius: 10px;
+      padding: 35px 30px;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: 0 5px 18px rgba(0,0,0,.04);
+    }
+
+    .contact-card::before {
+      content: "";
+      display: block;
+      width: 45px;
+      height: 4px;
+      background: #f58200;
+      border-radius: 4px;
+      margin: 0 auto 20px;
+    }
+
+    .contact-card h2 {
+      color: #0868ad;
+      font-size: 24px;
+      margin: 0 0 15px;
+    }
+
+    .contact-card p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .contact-card a {
+      color: #0868ad;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .visit {
+      background: #f5f9fc;
+      padding: 65px 20px;
+      text-align: center;
+    }
+
+    .visit h2 {
+      color: #0868ad;
+      font-size: 34px;
+      margin: 0 0 15px;
+    }
+
+    .visit p {
+      max-width: 780px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    .appointment-box {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .appointment-box h2 {
+      color: #0868ad;
+      font-size: 34px;
+      margin: 0 0 15px;
+    }
+
+    .appointment-box p {
+      max-width: 750px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #0873b9;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 15px 27px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #075f98;
+    }
+
+    .email-note {
+      max-width: 850px;
+      margin: 45px auto 0;
+      padding: 25px;
+      background: #eef7fc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #17384f;
+      color: #ffffff;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #ffffff;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        padding: 25px 0;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-hero h1 {
+        font-size: 36px;
+      }
+
+      .page-hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+
+      <a class="logo" href="index.html">
+        <img src="Dann Hearing Center Logo (2).png" alt="Dann Hearing Center">
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="hearing-aids.html">Hearing Aids</a>
+        <a href="resources.html">Patient Resources</a>
+        <a href="appointment.html">Request Appointment</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="phone-link" href="tel:2038663838">203-866-3838</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+
+      <div class="eyebrow">We're Here to Help</div>
+
+      <h1>Contact Dann Hearing Center</h1>
+
+      <p>
+        Have a question or need help with your hearing?
+        Contact our office or request an appointment online.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- CONTACT INFORMATION -->
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <h2>Visit Us</h2>
+
+          <p>
+            Dann Hearing Center<br>
+            650 West Ave<br>
+            Norwalk, CT 06850
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Call Us</h2>
+
+          <p>
+            <a href="tel:2038663838">
+              203-866-3838
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Office Hours</h2>
+
+          <p>
+            Monday–Friday<br>
+            9:30 AM–5:00 PM
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EMAIL -->
+  <section class="visit">
+    <div class="container">
+
+      <div class="eyebrow">Get in Touch</div>
+
+      <h2>Email Dann Hearing Center</h2>
+
+      <p>
+        For general questions, you may email us at
+        <a href="mailto:dannhearing67@gmail.com">
+          <strong>dannhearing67@gmail.com</strong>
+        </a>.
+      </p>
+
+      <div class="email-note">
+        Please do not send private medical or sensitive health information
+        by email. For appointment requests, please use our appointment
+        request page or call the office.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- APPOINTMENT -->
+  <section class="appointment-box">
+    <div class="container">
+
+      <div class="eyebrow">Schedule a Visit</div>
+
+      <h2>Request an Appointment</h2>
+
+      <p>
+        Whether you need a hearing evaluation, hearing aid consultation,
+        adjustment, cleaning, repair, custom earmold or other hearing
+        service, you can send us an appointment request online.
+      </p>
+
+      <a class="button" href="appointment.html">
+        Request an Appointment
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>Dann Hearing Center</strong>
+
+    <p>
+      650 West Ave, Norwalk, CT 06850 &nbsp; | &nbsp;
+      <a href="tel:2038663838">203-866-3838</a>
+    </p>
+
+    <p>Monday–Friday &nbsp; | &nbsp; 9:30 AM–5:00 PM</p>
+
+    <p>Serving Fairfield County since 1967</p>
+
+  </footer>
+
+</body>
+</html>
