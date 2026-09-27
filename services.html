@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hearing Care Services | Dann Hearing Center | Norwalk, CT</title>
+
+  <meta name="description" content="Dann Hearing Center provides hearing evaluations, hearing aid fittings, programming, repairs, cleaning, custom earmolds, hearing protection and ongoing hearing care in Norwalk, Connecticut.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #243746;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e9ed;
+    }
+
+    .header-inner {
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo img {
+      width: 180px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #152d3e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #0878c9;
+    }
+
+    .phone-link {
+      color: #0878c9;
+    }
+
+    /* HERO */
+
+    .page-hero {
+      background: linear-gradient(135deg, #f2f9fd, #e8f5fc);
+      padding: 75px 20px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #f58200;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .page-hero h1 {
+      color: #0868ad;
+      font-size: 46px;
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .page-hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 21px;
+      color: #314b5e;
+    }
+
+    /* INTRO */
+
+    .intro {
+      padding: 65px 20px 35px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      color: #0868ad;
+      font-size: 34px;
+      margin: 0 0 18px;
+    }
+
+    .intro p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      padding: 35px 20px 75px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      border: 1px solid #dce5eb;
+      border-radius: 10px;
+      padding: 32px;
+      background: #ffffff;
+      box-shadow: 0 5px 18px rgba(0,0,0,.04);
+    }
+
+    .service-card::before {
+      content: "";
+      display: block;
+      width: 45px;
+      height: 4px;
+      background: #f58200;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: #0868ad;
+      font-size: 23px;
+      margin: 0 0 12px;
+    }
+
+    .service-card p {
+      font-size: 17px;
+      margin: 0;
+    }
+
+    /* PURCHASED ELSEWHERE */
+
+    .elsewhere {
+      background: #f5f9fc;
+      padding: 65px 20px;
+    }
+
+    .elsewhere-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .elsewhere h2 {
+      color: #0868ad;
+      font-size: 32px;
+      margin: 0 0 18px;
+    }
+
+    .elsewhere p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    /* PERSONAL CARE */
+
+    .personal-care {
+      padding: 65px 20px;
+      text-align: center;
+    }
+
+    .personal-care h2 {
+      color: #0868ad;
+      font-size: 32px;
+      margin: 0 0 18px;
+    }
+
+    .personal-care p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: #0873b9;
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin: 0 0 12px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      margin: 0 0 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffffff;
+      color: #0873b9;
+      text-decoration: none;
+      padding: 14px 25px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #f2f6f9;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #17384f;
+      color: #ffffff;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+      .header-inner {
+        padding: 25px 0;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-hero h1 {
+        font-size: 36px;
+      }
+
+      .page-hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+
+      <a class="logo" href="index.html">
+        <img src="Dann Hearing Center Logo (2).png" alt="Dann Hearing Center">
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="hearing-aids.html">Hearing Aids</a>
+        <a href="resources.html">Patient Resources</a>
+        <a href="appointment.html">Request Appointment</a>
+        <a href="contact.html">Contact</a>
+        <a class="phone-link" href="tel:2038663838">203-866-3838</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+
+      <div class="eyebrow">Personalized Hearing Care</div>
+
+      <h1>Hearing Care Services</h1>
+
+      <p>
+        Personalized service and ongoing hearing care for every stage
+        of your hearing journey.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="container">
+
+      <h2>Hearing Care Centered Around You</h2>
+
+      <p>
+        At Dann Hearing Center, we take the time to understand your
+        individual hearing needs, communication goals and lifestyle.
+        From hearing evaluations and hearing aid fittings to adjustments,
+        repairs and ongoing care, our goal is to provide personal attention
+        and dependable service.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <h3>Hearing Evaluations</h3>
+          <p>
+            Comprehensive hearing evaluations to better understand your
+            hearing needs and help determine appropriate next steps.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Hearing Aid Consultation &amp; Selection</h3>
+          <p>
+            Personalized guidance in selecting hearing technology based on
+            your hearing needs, communication goals, lifestyle, preferences
+            and budget.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Hearing Aid Fittings</h3>
+          <p>
+            Professional hearing aid fitting and orientation designed to
+            help you become comfortable and confident with your hearing
+            devices.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Programming &amp; Adjustments</h3>
+          <p>
+            Personalized hearing aid programming and adjustments to help
+            improve comfort, clarity and overall listening performance.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Cleaning &amp; Maintenance</h3>
+          <p>
+            Routine hearing aid cleaning and maintenance to help keep your
+            devices working properly and performing their best.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Hearing Aid Repairs</h3>
+          <p>
+            Troubleshooting and repair assistance for many hearing aid
+            makes and models.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Custom Earmolds &amp; Hearing Protection</h3>
+          <p>
+            Custom-fit earmolds and hearing protection designed for comfort,
+            secure fit and individual listening or hearing protection needs.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Ongoing Hearing Care</h3>
+          <p>
+            Follow-up appointments, support and personalized care as your
+            hearing needs and listening situations change over time.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HEARING AIDS PURCHASED ELSEWHERE -->
+  <section class="elsewhere">
+    <div class="elsewhere-inner">
+
+      <div class="eyebrow">Need Help With Your Hearing Aids?</div>
+
+      <h2>Hearing Aids Purchased Elsewhere</h2>
+
+      <p>
+        If you purchased hearing aids from another provider or online,
+        Dann Hearing Center may be able to assist with programming,
+        adjustments, cleaning, maintenance or troubleshooting depending
+        on the hearing aid manufacturer and model. Contact us to discuss
+        your devices and the services you need.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- PERSONAL CARE -->
+  <section class="personal-care">
+    <div class="container">
+
+      <h2>Care That Continues After Your Fitting</h2>
+
+      <p>
+        Successful hearing care doesn't end when you receive your hearing
+        aids. We provide follow-up care, adjustments, maintenance and
+        ongoing support to help you get the most from your hearing
+        technology.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+
+      <h2>How Can We Help You?</h2>
+
+      <p>
+        Request an appointment with Dann Hearing Center and let us know
+        which service you need.
+      </p>
+
+      <a class="button" href="appointment.html">
+        Request an Appointment
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>Dann Hearing Center</strong>
+
+    <p>650 West Ave, Norwalk, CT 06850 &nbsp; | &nbsp; 203-866-3838</p>
+
+    <p>Serving Fairfield County since 1967</p>
+
+  </footer>
+
+</body>
+</html>
