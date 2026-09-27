@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | Dann Hearing Center | Fairfield County, CT</title>
+
+  <meta name="description" content="Learn about Dann Hearing Center, an independent hearing healthcare practice serving Fairfield County, Connecticut since 1967.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #243746;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e9ed;
+    }
+
+    .header-inner {
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo img {
+      width: 180px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #152d3e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #0878c9;
+    }
+
+    .phone-link {
+      color: #0878c9;
+    }
+
+    /* PAGE HERO */
+
+    .page-hero {
+      background: linear-gradient(135deg, #f2f9fd, #e8f5fc);
+      padding: 75px 20px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #f58200;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .page-hero h1 {
+      color: #0868ad;
+      font-size: 46px;
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .page-hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 21px;
+      color: #314b5e;
+    }
+
+    /* ABOUT CONTENT */
+
+    .about-section {
+      padding: 75px 20px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 65px;
+      align-items: start;
+    }
+
+    .about-copy h2 {
+      color: #0868ad;
+      font-size: 34px;
+      line-height: 1.25;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    .about-copy p {
+      font-size: 18px;
+      margin: 0 0 22px;
+    }
+
+    .history-box {
+      background: #0873b9;
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 45px 30px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .history-box .year {
+      font-size: 58px;
+      line-height: 1;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .history-box p {
+      font-size: 19px;
+      margin: 0;
+    }
+
+    /* CLOSING STATEMENT */
+
+    .closing {
+      background: #f5f9fc;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    .closing p {
+      color: #0868ad;
+      font-size: 25px;
+      font-weight: 700;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    /* CALL TO ACTION */
+
+    .cta {
+      background: #0873b9;
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin: 0 0 12px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      margin: 0 0 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffffff;
+      color: #0873b9;
+      text-decoration: none;
+      padding: 14px 25px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #f2f6f9;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #17384f;
+      color: #ffffff;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #ffffff;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+      .header-inner {
+        padding: 25px 0;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .page-hero h1 {
+        font-size: 36px;
+      }
+
+      .page-hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+
+      <a class="logo" href="index.html">
+        <img src="Dann Hearing Center Logo (2).png" alt="Dann Hearing Center">
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="hearing-aids.html">Hearing Aids</a>
+        <a href="resources.html">Patient Resources</a>
+        <a href="appointment.html">Request Appointment</a>
+        <a href="contact.html">Contact</a>
+        <a class="phone-link" href="tel:2038663838">203-866-3838</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- PAGE INTRO -->
+  <section class="page-hero">
+    <div class="container">
+
+      <div class="eyebrow">A Tradition of Personal Care</div>
+
+      <h1>Serving Fairfield County Since 1967</h1>
+
+      <p>
+        Personalized hearing care built on experience, compassionate
+        service and a commitment to helping people hear their best.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="about-section">
+
+    <div class="container about-grid">
+
+      <div class="about-copy">
+
+        <h2>About Dann Hearing Center</h2>
+
+        <p>
+          For nearly six decades, Dann Hearing Center has been dedicated
+          to helping individuals reconnect with the sounds that matter most.
+          Since opening our doors in 1967, we have built our reputation on
+          compassionate care, personalized service, and a commitment to
+          improving the quality of life for people with hearing loss
+          throughout Fairfield County.
+        </p>
+
+        <p>
+          As an independent hearing healthcare practice, we take the time
+          to understand each patient's unique hearing needs, lifestyle,
+          and budget. Rather than promoting a single manufacturer, we offer
+          hearing solutions from many of the industry's most trusted brands,
+          allowing us to recommend the technology that best fits each
+          individual.
+        </p>
+
+        <p>
+          At Dann Hearing Center, we believe that better hearing is about
+          more than hearing aids—it's about restoring confidence,
+          strengthening relationships, and helping people stay connected
+          with family, friends, and the world around them.
+        </p>
+
+        <p>
+          Generations of families have trusted Dann Hearing Center because
+          of our honest recommendations, personalized attention, and
+          dedication to exceptional patient care. As hearing technology
+          continues to advance, our commitment remains the same: to provide
+          expert guidance, outstanding service, and hearing solutions that
+          help our patients enjoy life to the fullest.
+        </p>
+
+      </div>
+
+      <div class="history-box">
+
+        <div class="year">1967</div>
+
+        <p>
+          A tradition of personalized hearing care serving Fairfield County.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <div class="container">
+      <p>
+        Dann Hearing Center — Helping Fairfield County hear better since 1967.
+      </p>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT CTA -->
+  <section class="cta">
+    <div class="container">
+
+      <h2>We're Here to Help You Hear Better</h2>
+
+      <p>
+        Contact Dann Hearing Center to request an appointment.
+      </p>
+
+      <a class="button" href="appointment.html">
+        Request an Appointment
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>Dann Hearing Center</strong>
+
+    <p>650 West Ave, Norwalk, CT 06850 &nbsp; | &nbsp; 203-866-3838</p>
+
+    <p>Serving Fairfield County since 1967</p>
+
+  </footer>
+
+</body>
+</html>
