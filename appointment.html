@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Request an Appointment | Dann Hearing Center | Norwalk, CT</title>
+
+  <meta name="description" content="Request an appointment with Dann Hearing Center in Norwalk, Connecticut for hearing evaluations, hearing aids, programming, repairs, custom earmolds and hearing care.">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #243746;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e9ed;
+    }
+
+    .header-inner {
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo img {
+      width: 180px;
+      max-width: 100%;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #152d3e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #0878c9;
+    }
+
+    .phone-link {
+      color: #0878c9;
+    }
+
+    .page-hero {
+      background: linear-gradient(135deg, #f2f9fd, #e8f5fc);
+      padding: 75px 20px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #f58200;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .page-hero h1 {
+      color: #0868ad;
+      font-size: 46px;
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .page-hero p {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 20px;
+      color: #314b5e;
+    }
+
+    .appointment-section {
+      padding: 70px 20px;
+    }
+
+    .appointment-grid {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      color: #0868ad;
+      font-size: 32px;
+      margin: 0 0 18px;
+    }
+
+    .contact-info p {
+      font-size: 17px;
+      margin: 0 0 22px;
+    }
+
+    .info-box {
+      background: #0873b9;
+      color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .info-box h3 {
+      margin: 0 0 15px;
+      font-size: 22px;
+    }
+
+    .info-box p {
+      margin: 7px 0;
+    }
+
+    .info-box a {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .form-wrap {
+      background: #f5f9fc;
+      padding: 38px;
+      border-radius: 10px;
+      border: 1px solid #dce5eb;
+    }
+
+    .form-wrap h2 {
+      color: #0868ad;
+      font-size: 30px;
+      margin: 0 0 10px;
+    }
+
+    .form-intro {
+      margin: 0 0 28px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #bfcbd3;
+      border-radius: 5px;
+      font: inherit;
+      background: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .submit-button {
+      border: none;
+      background: #0873b9;
+      color: #ffffff;
+      padding: 15px 28px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: #075f98;
+    }
+
+    .disclaimer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #5c6972;
+      line-height: 1.5;
+    }
+
+    .confirmation-note {
+      background: #eef7fc;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .confirmation-note h2 {
+      color: #0868ad;
+      margin: 0 0 12px;
+    }
+
+    .confirmation-note p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #17384f;
+      color: #ffffff;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #ffffff;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        padding: 25px 0;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .appointment-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .page-hero h1 {
+        font-size: 36px;
+      }
+
+      .page-hero p {
+        font-size: 18px;
+      }
+
+      .form-wrap {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-inner">
+
+      <a class="logo" href="index.html">
+        <img src="Dann Hearing Center Logo (2).png" alt="Dann Hearing Center">
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="hearing-aids.html">Hearing Aids</a>
+        <a href="resources.html">Patient Resources</a>
+        <a href="appointment.html" class="active">Request Appointment</a>
+        <a href="contact.html">Contact</a>
+        <a class="phone-link" href="tel:2038663838">203-866-3838</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+
+      <div class="eyebrow">We're Here to Help</div>
+
+      <h1>Request an Appointment</h1>
+
+      <p>
+        Tell us how we can help. A member of the Dann Hearing Center team
+        will contact you to arrange your appointment.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="appointment-section">
+    <div class="container appointment-grid">
+
+      <div class="contact-info">
+
+        <div class="eyebrow">Contact Dann Hearing Center</div>
+
+        <h2>Let's Talk About Your Hearing</h2>
+
+        <p>
+          Whether you're concerned about your hearing, considering hearing
+          aids, need an adjustment or repair, or simply have a question
+          about your hearing technology, we're here to help.
+        </p>
+
+        <p>
+          Complete the appointment request form and we'll contact you to
+          arrange a convenient appointment.
+        </p>
+
+        <div class="info-box">
+
+          <h3>Dann Hearing Center</h3>
+
+          <p>
+            650 West Ave<br>
+            Norwalk, CT 06850
+          </p>
+
+          <p>
+            <strong>Phone:</strong><br>
+            <a href="tel:2038663838">203-866-3838</a>
+          </p>
+
+          <p>
+            <strong>Office Hours:</strong><br>
+            Monday–Friday<br>
+            9:30 AM–5:00 PM
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="form-wrap">
+
+        <h2>Appointment Request</h2>
+
+        <p class="form-intro">
+          Please complete the form below. Your appointment is not confirmed
+          until you have been contacted by Dann Hearing Center.
+        </p>
+
+        <form action="https://formspree.io/f/maenpzej" method="POST">
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Appointment Request - Dann Hearing Center">
+
+          <div class="form-row">
+
+            <div>
+              <label for="name">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required>
+            </div>
+
+            <div>
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required>
+            </div>
+
+          </div>
+
+          <label for="email">Email Address *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+
+          <label for="reason">How can we help you? *</label>
+
+          <select id="reason" name="reason" required>
+
+            <option value="">Please select</option>
+
+            <option value="Hearing Evaluation">
+              Hearing Evaluation
+            </option>
+
+            <option value="Hearing Aid Consultation">
+              Hearing Aid Consultation
+            </option>
+
+            <option value="Hearing Aid Adjustment or Programming">
+              Hearing Aid Adjustment / Programming
+            </option>
+
+            <option value="Hearing Aid Cleaning or Maintenance">
+              Hearing Aid Cleaning / Maintenance
+            </option>
+
+            <option value="Hearing Aid Repair">
+              Hearing Aid Repair
+            </option>
+
+            <option value="Custom Earmold or Hearing Protection">
+              Custom Earmold / Hearing Protection
+            </option>
+
+            <option value="Existing Hearing Aids Purchased Elsewhere">
+              Existing Hearing Aids Purchased Elsewhere
+            </option>
+
+            <option value="Other">
+              Other
+            </option>
+
+          </select>
+
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Please tell us how we can help."></textarea>
+
+          <button class="submit-button" type="submit">
+            Send Appointment Request
+          </button>
+
+          <p class="disclaimer">
+            Please do not include private medical or sensitive health
+            information in this form. This form is for general appointment
+            requests and questions. Appointment requests are not confirmed
+            until you have been contacted by Dann Hearing Center.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="confirmation-note">
+    <div class="container">
+
+      <h2>What Happens Next?</h2>
+
+      <p>
+        After submitting your request, Dann Hearing Center will contact you
+        to arrange your appointment. If you need more immediate assistance,
+        please call our office at 203-866-3838 during regular business hours.
+      </p>
+
+    </div>
+  </section>
+
+  <footer>
+
+    <strong>Dann Hearing Center</strong>
+
+    <p>
+      650 West Ave, Norwalk, CT 06850 &nbsp; | &nbsp;
+      <a href="tel:2038663838">203-866-3838</a>
+    </p>
+
+    <p>Monday–Friday &nbsp; | &nbsp; 9:30 AM–5:00 PM</p>
+
+    <p>Serving Fairfield County since 1967</p>
+
+  </footer>
+
+</body>
+</html>
