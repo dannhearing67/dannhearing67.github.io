@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Dann Hearing Center | Hearing Aids & Hearing Care in Norwalk, CT</title>
-  <meta name="description" content="Dann Hearing Center provides personalized hearing care, hearing evaluations, hearing aid fittings, programming, repairs and ongoing support in Norwalk, Connecticut. Serving the community since 1967.">
+
+  <meta name="description" content="Dann Hearing Center has provided personalized hearing care to Fairfield County since 1967. Hearing evaluations, hearing aids, programming, repairs, maintenance and ongoing hearing care in Norwalk, Connecticut.">
 
   <style>
     * {
@@ -19,7 +20,7 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      color: #263746;
+      color: #243746;
       background: #ffffff;
       line-height: 1.6;
     }
@@ -29,86 +30,83 @@
       border-bottom: 1px solid #e5e9ed;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
     }
 
     .header-inner {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
-      padding: 12px 25px;
+      padding: 18px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 30px;
     }
 
-    .logo {
-      width: 255px;
-      max-width: 40vw;
-      height: auto;
+    .logo img {
+      width: 180px;
+      max-width: 100%;
       display: block;
     }
 
     nav {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 26px;
       flex-wrap: wrap;
     }
 
     nav a {
-      color: #243746;
       text-decoration: none;
-      font-size: 15px;
+      color: #142b3c;
       font-weight: 700;
+      font-size: 15px;
     }
 
     nav a:hover {
-      color: #0875c1;
+      color: #126fae;
     }
 
-    .phone-link {
-      color: #0875c1;
+    .phone-top {
+      color: #0877c9;
     }
 
     .hero {
-      background: linear-gradient(135deg, #f5fbff 0%, #e8f5fc 100%);
-      padding: 90px 25px;
+      background: #eef8fd;
+      text-align: center;
+      padding: 85px 20px 90px;
     }
 
     .hero-inner {
-      max-width: 1050px;
+      max-width: 820px;
       margin: auto;
-      text-align: center;
     }
 
     .eyebrow {
-      color: #f28c00;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 700;
+      color: #f28a00;
       font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
       margin-bottom: 12px;
     }
 
     .hero h1 {
-      color: #0869ae;
+      color: #116bab;
       font-size: 52px;
-      line-height: 1.12;
-      margin: 0 0 16px;
+      line-height: 1.1;
+      margin: 0 0 20px;
     }
 
-    .hero h2 {
+    .hero-subtitle {
       font-size: 26px;
-      font-weight: 400;
-      margin: 0 0 22px;
-      color: #354b5b;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      max-width: 780px;
-      margin: 0 auto 32px;
       font-size: 19px;
+      max-width: 760px;
+      margin: 0 auto 30px;
     }
 
     .buttons {
@@ -120,30 +118,23 @@
 
     .button {
       display: inline-block;
-      padding: 14px 24px;
-      border-radius: 6px;
+      padding: 15px 25px;
+      background: #0877bd;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: 700;
-      font-size: 17px;
+      border: 2px solid #0877bd;
     }
 
-    .button-primary {
-      background: #0875c1;
-      color: #ffffff;
+    .button-outline {
+      background: white;
+      color: #0877bd;
     }
 
-    .button-secondary {
-      background: #ffffff;
-      color: #0875c1;
-      border: 2px solid #0875c1;
-    }
-
-    .section {
-      padding: 75px 25px;
-    }
-
-    .section-alt {
-      background: #f7fafc;
+    section {
+      padding: 75px 20px;
+      scroll-margin-top: 110px;
     }
 
     .container {
@@ -152,16 +143,16 @@
     }
 
     .section-title {
+      color: #116bab;
       text-align: center;
-      color: #0869ae;
-      font-size: 34px;
-      margin: 0 0 12px;
+      font-size: 36px;
+      margin: 0 0 10px;
     }
 
     .section-intro {
+      max-width: 800px;
+      margin: 0 auto 42px;
       text-align: center;
-      max-width: 780px;
-      margin: 0 auto 40px;
       font-size: 18px;
     }
 
@@ -172,100 +163,195 @@
     }
 
     .card {
-      background: #ffffff;
-      border: 1px solid #e1e8ed;
-      border-radius: 10px;
-      padding: 30px 25px;
-      box-shadow: 0 4px 16px rgba(0,0,0,.05);
+      border: 1px solid #dce5eb;
+      border-radius: 9px;
+      padding: 28px 25px;
+      background: white;
+      box-shadow: 0 5px 18px rgba(0,0,0,.04);
+    }
+
+    .card::before {
+      content: "";
+      display: block;
+      width: 45px;
+      height: 4px;
+      background: #f28a00;
+      margin-bottom: 20px;
+      border-radius: 3px;
     }
 
     .card h3 {
-      color: #0869ae;
+      color: #116bab;
       margin-top: 0;
       font-size: 21px;
     }
 
-    .orange-line {
-      width: 45px;
-      height: 4px;
-      background: #f28c00;
-      border-radius: 10px;
-      margin-bottom: 18px;
+    .about {
+      background: #f5f9fc;
     }
 
-    .about {
+    .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.25fr .75fr;
       gap: 55px;
       align-items: center;
     }
 
     .about h2 {
-      color: #0869ae;
-      font-size: 36px;
+      color: #116bab;
+      font-size: 38px;
+      line-height: 1.3;
       margin-top: 0;
     }
 
-    .since-box {
-      background: #0869ae;
+    .about p {
+      font-size: 17px;
+    }
+
+    .year-box {
+      background: #1376b8;
       color: white;
-      border-radius: 12px;
-      padding: 45px;
       text-align: center;
+      padding: 45px 25px;
+      border-radius: 10px;
     }
 
-    .since-box .year {
-      font-size: 64px;
-      font-weight: 700;
+    .year-box strong {
+      display: block;
+      font-size: 62px;
       line-height: 1;
-      margin-bottom: 10px;
+      margin-bottom: 18px;
     }
 
-    .since-box p {
+    .year-box span {
       font-size: 20px;
-      margin: 0;
     }
 
-    .contact-section {
-      background: #0869ae;
-      color: #ffffff;
-      padding: 70px 25px;
+    .hearing-aids {
+      background: white;
     }
 
-    .contact-section h2 {
-      font-size: 36px;
+    .resources {
+      background: #f5f9fc;
+    }
+
+    .resource-note {
+      max-width: 850px;
+      margin: 40px auto 0;
+      padding: 25px 30px;
+      background: #ffffff;
+      border-left: 5px solid #f28a00;
+      border-radius: 5px;
+    }
+
+    .resource-note h3 {
+      color: #116bab;
       margin-top: 0;
-      text-align: center;
+    }
+
+    .appointment {
+      background: #ffffff;
+    }
+
+    .form-wrap {
+      max-width: 760px;
+      margin: auto;
+      background: #f5f9fc;
+      padding: 35px;
+      border-radius: 10px;
+      border: 1px solid #dce5eb;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin: 0 0 7px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #bfcbd3;
+      border-radius: 5px;
+      font: inherit;
+      background: white;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .submit-button {
+      border: 0;
+      background: #0877bd;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: #075f98;
+    }
+
+    .form-disclaimer {
+      font-size: 13px;
+      color: #5c6972;
+      margin-top: 18px;
+    }
+
+    .contact {
+      background: #1376b8;
+      color: white;
+    }
+
+    .contact .section-title {
+      color: white;
     }
 
     .contact-grid {
-      max-width: 900px;
-      margin: 35px auto 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 30px;
+      max-width: 900px;
+      margin: 40px auto 0;
       text-align: center;
     }
 
-    .contact-grid h3 {
-      color: #ffffff;
+    .contact h3 {
       margin-bottom: 8px;
     }
 
-    .contact-grid a {
-      color: #ffffff;
+    .contact a {
+      color: white;
       font-weight: 700;
     }
 
     footer {
-      background: #173247;
-      color: #ffffff;
+      background: #193a52;
+      color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 32px 20px;
     }
 
     footer p {
       margin: 5px 0;
+    }
+
+    footer a {
+      color: white;
     }
 
     @media (max-width: 850px) {
@@ -273,20 +359,20 @@
         flex-direction: column;
       }
 
-      .logo {
-        max-width: 300px;
-        width: 75%;
-      }
-
       nav {
         justify-content: center;
+        gap: 14px 18px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
       }
 
       .cards {
         grid-template-columns: 1fr;
       }
 
-      .about {
+      .about-grid {
         grid-template-columns: 1fr;
       }
 
@@ -294,34 +380,35 @@
         grid-template-columns: 1fr;
       }
 
-      .hero h1 {
-        font-size: 40px;
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
       }
     }
 
-    @media (max-width: 550px) {
-      nav {
-        gap: 12px 16px;
-      }
-
-      nav a {
-        font-size: 14px;
-      }
-
+    @media (max-width: 520px) {
       .hero {
-        padding: 65px 20px;
+        padding: 60px 18px;
       }
 
       .hero h1 {
         font-size: 34px;
       }
 
-      .hero h2 {
+      .hero-subtitle {
         font-size: 21px;
       }
 
-      .section {
-        padding: 55px 20px;
+      section {
+        padding: 55px 18px;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .form-wrap {
+        padding: 25px 18px;
       }
     }
   </style>
@@ -331,12 +418,8 @@
 
 <header>
   <div class="header-inner">
-
-    <a href="#home">
-      <img
-        src="Dann%20Hearing%20Center%20Logo%20(2).png"
-        alt="Dann Hearing Center"
-        class="logo">
+    <a class="logo" href="#home">
+      <img src="Dann Hearing Center Logo (2).png" alt="Dann Hearing Center">
     </a>
 
     <nav>
@@ -344,15 +427,17 @@
       <a href="#about">About Us</a>
       <a href="#services">Services</a>
       <a href="#hearing-aids">Hearing Aids</a>
+      <a href="#resources">Patient Resources</a>
       <a href="#contact">Contact</a>
-      <a class="phone-link" href="tel:2038663838">203-866-3838</a>
+      <a class="phone-top" href="tel:2038663838">203-866-3838</a>
     </nav>
-
   </div>
 </header>
 
+
 <main>
 
+  <!-- HOME -->
   <section class="hero" id="home">
     <div class="hero-inner">
 
@@ -360,21 +445,20 @@
 
       <h1>Better Hearing.<br>Better Connection.</h1>
 
-      <h2>Personalized hearing care in Norwalk, Connecticut</h2>
+      <div class="hero-subtitle">
+        Personalized hearing care in Norwalk, Connecticut
+      </div>
 
       <p>
-        At Dann Hearing Center, we believe better hearing begins with
-        personal attention. We provide individualized hearing care,
-        hearing aid services and ongoing support to help you stay
-        connected to the people and moments that matter.
+        At Dann Hearing Center, we believe better hearing begins with personal
+        attention. We provide individualized hearing care, hearing aid services
+        and ongoing support to help you stay connected to the people and moments
+        that matter.
       </p>
 
       <div class="buttons">
-        <a class="button button-primary" href="#contact">
-          Request an Appointment
-        </a>
-
-        <a class="button button-secondary" href="tel:2038663838">
+        <a class="button" href="#appointment">Request an Appointment</a>
+        <a class="button button-outline" href="tel:2038663838">
           Call 203-866-3838
         </a>
       </div>
@@ -383,69 +467,123 @@
   </section>
 
 
-  <section class="section" id="services">
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+
+      <div>
+        <div class="eyebrow">A Tradition of Personal Care</div>
+
+        <h2>Serving Fairfield County Since 1967</h2>
+
+        <p>
+          For nearly six decades, Dann Hearing Center has been dedicated to
+          helping individuals reconnect with the sounds that matter most.
+          Since opening our doors in 1967, we have built our reputation on
+          compassionate care, personalized service, and a commitment to
+          improving the quality of life for people with hearing loss
+          throughout Fairfield County.
+        </p>
+
+        <p>
+          As an independent hearing healthcare practice, we take the time to
+          understand each patient's unique hearing needs, lifestyle, and
+          budget. Rather than promoting a single manufacturer, we offer
+          hearing solutions from many of the industry's most trusted brands,
+          allowing us to recommend the technology that best fits each
+          individual.
+        </p>
+
+        <p>
+          At Dann Hearing Center, we believe that better hearing is about more
+          than hearing aids—it's about restoring confidence, strengthening
+          relationships, and helping people stay connected with family,
+          friends, and the world around them.
+        </p>
+
+        <p>
+          Generations of families have trusted Dann Hearing Center because of
+          our honest recommendations, personalized attention, and dedication
+          to exceptional patient care. As hearing technology continues to
+          advance, our commitment remains the same: to provide expert
+          guidance, outstanding service, and hearing solutions that help our
+          patients enjoy life to the fullest.
+        </p>
+
+        <p>
+          <strong>
+            Dann Hearing Center — Helping Fairfield County hear better since 1967.
+          </strong>
+        </p>
+      </div>
+
+      <div class="year-box">
+        <strong>1967</strong>
+        <span>A tradition of personalized hearing care.</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
     <div class="container">
 
       <h2 class="section-title">Hearing Care Services</h2>
 
       <p class="section-intro">
-        Personalized service and ongoing hearing care for every stage
-        of your hearing journey.
+        Personalized service and ongoing hearing care for every stage of your
+        hearing journey.
       </p>
 
       <div class="cards">
 
         <div class="card">
-          <div class="orange-line"></div>
           <h3>Hearing Evaluations</h3>
           <p>
-            Hearing evaluations to better understand your hearing needs
-            and help determine appropriate next steps.
+            Hearing evaluations to better understand your hearing needs and
+            help determine appropriate next steps.
           </p>
         </div>
 
         <div class="card">
-          <div class="orange-line"></div>
           <h3>Hearing Aid Fittings</h3>
           <p>
-            Personalized hearing aid selection, fitting and programming
-            based on your hearing needs and lifestyle.
+            Personalized hearing aid selection, fitting and programming based
+            on your hearing needs and lifestyle.
           </p>
         </div>
 
         <div class="card">
-          <div class="orange-line"></div>
-          <h3>Programming & Adjustments</h3>
+          <h3>Programming &amp; Adjustments</h3>
           <p>
-            Professional hearing aid programming and adjustments to help
-            you get the most from your devices.
+            Professional hearing aid programming and adjustments to help you
+            get the most from your devices.
           </p>
         </div>
 
         <div class="card">
-          <div class="orange-line"></div>
-          <h3>Cleaning & Maintenance</h3>
+          <h3>Cleaning &amp; Maintenance</h3>
           <p>
-            Routine hearing aid cleaning and maintenance to help keep
-            your devices working properly.
+            Routine hearing aid cleaning and maintenance to help keep your
+            devices working properly.
           </p>
         </div>
 
         <div class="card">
-          <div class="orange-line"></div>
           <h3>Hearing Aid Repairs</h3>
           <p>
-            Troubleshooting and repair assistance for many hearing aid
-            makes and models.
+            Troubleshooting and repair assistance for many hearing aid makes
+            and models.
           </p>
         </div>
 
         <div class="card">
-          <div class="orange-line"></div>
           <h3>Ongoing Hearing Care</h3>
           <p>
-            Follow-up appointments, support and personalized care as
-            your hearing needs change.
+            Follow-up appointments, support and personalized care as your
+            hearing needs change.
           </p>
         </div>
 
@@ -454,50 +592,20 @@
   </section>
 
 
-  <section class="section section-alt" id="about">
-    <div class="container about">
-
-      <div>
-        <div class="eyebrow">A Tradition of Personal Care</div>
-
-        <h2>Serving Our Community Since 1967</h2>
-
-        <p>
-          Dann Hearing Center has a long history of providing personalized
-          hearing care. We believe patients deserve time, attention and
-          hearing solutions tailored to their individual needs.
-        </p>
-
-        <p>
-          As an independent hearing center, our focus is on providing
-          personal service and ongoing support before, during and after
-          your hearing aid fitting.
-        </p>
-      </div>
-
-      <div class="since-box">
-        <div class="year">1967</div>
-        <p>A tradition of personalized hearing care.</p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class="section" id="hearing-aids">
+  <!-- HEARING AIDS -->
+  <section class="hearing-aids" id="hearing-aids">
     <div class="container">
 
       <h2 class="section-title">Hearing Aid Technology</h2>
 
       <p class="section-intro">
-        We work with leading hearing aid manufacturers to help find
-        technology suited to your hearing needs, preferences and lifestyle.
+        We work with leading hearing aid manufacturers to help find technology
+        suited to your hearing needs, preferences and lifestyle.
       </p>
 
       <div class="cards">
 
         <div class="card">
-          <div class="orange-line"></div>
           <h3>Multiple Leading Brands</h3>
           <p>
             We work with hearing technology from Oticon, ReSound, Phonak,
@@ -506,7 +614,6 @@
         </div>
 
         <div class="card">
-          <div class="orange-line"></div>
           <h3>Personalized Selection</h3>
           <p>
             Hearing aids are selected based on your hearing needs,
@@ -515,7 +622,6 @@
         </div>
 
         <div class="card">
-          <div class="orange-line"></div>
           <h3>Professional Follow-Up</h3>
           <p>
             Hearing care doesn't end when you receive your hearing aids.
@@ -528,10 +634,149 @@
   </section>
 
 
-  <section class="contact-section" id="contact">
+  <!-- PATIENT RESOURCES -->
+  <section class="resources" id="resources">
     <div class="container">
 
-      <h2>Contact Dann Hearing Center</h2>
+      <h2 class="section-title">Patient Resources</h2>
+
+      <p class="section-intro">
+        Helpful information to make your hearing care experience as simple
+        and comfortable as possible.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Your First Visit</h3>
+          <p>
+            Your first appointment is an opportunity for us to learn about
+            your hearing concerns, communication needs and listening
+            situations. We take the time to answer your questions and discuss
+            appropriate next steps.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Hearing Aid Care</h3>
+          <p>
+            Proper cleaning and routine maintenance can help keep your hearing
+            aids performing their best. We provide guidance on cleaning,
+            maintenance and everyday hearing aid care.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Adjustments &amp; Follow-Up</h3>
+          <p>
+            Hearing needs can change over time. Follow-up care allows us to
+            make adjustments, address concerns and help you continue getting
+            the most from your hearing aids.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="resource-note">
+        <h3>Questions About Your Hearing Aids?</h3>
+        <p>
+          Whether you need help with cleaning, maintenance, programming,
+          troubleshooting or an adjustment, contact Dann Hearing Center.
+          We're here to help.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- APPOINTMENT FORM -->
+  <section class="appointment" id="appointment">
+    <div class="container">
+
+      <h2 class="section-title">Request an Appointment</h2>
+
+      <p class="section-intro">
+        Send us a request and Dann Hearing Center will contact you to arrange
+        your appointment.
+      </p>
+
+      <div class="form-wrap">
+
+        <form action="https://formspree.io/f/maenpzej" method="POST">
+
+          <input type="hidden"
+                 name="_subject"
+                 value="New Appointment Request - Dann Hearing Center">
+
+          <div class="form-row">
+
+            <div>
+              <label for="name">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required>
+            </div>
+
+            <div>
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required>
+            </div>
+
+          </div>
+
+          <label for="email">Email Address *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+
+          <label for="reason">How can we help you?</label>
+          <select id="reason" name="reason">
+            <option value="">Please select</option>
+            <option>Hearing Evaluation</option>
+            <option>Hearing Aid Consultation</option>
+            <option>Hearing Aid Adjustment</option>
+            <option>Hearing Aid Cleaning or Maintenance</option>
+            <option>Hearing Aid Repair</option>
+            <option>Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Please tell us how we can help."></textarea>
+
+          <button class="submit-button" type="submit">
+            Send Appointment Request
+          </button>
+
+          <p class="form-disclaimer">
+            Please do not include private medical or sensitive health
+            information in this form. This form is for general appointment
+            requests and questions.
+          </p>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <h2 class="section-title">Contact Dann Hearing Center</h2>
 
       <div class="contact-grid">
 
@@ -558,6 +803,13 @@
 
       </div>
 
+      <div style="text-align:center; margin-top:35px;">
+        <h3>Email Us</h3>
+        <a href="mailto:dannhearing67@gmail.com">
+          dannhearing67@gmail.com
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -566,8 +818,20 @@
 
 <footer>
   <p><strong>Dann Hearing Center</strong></p>
-  <p>650 West Ave, Norwalk, CT 06850 &nbsp; | &nbsp; 203-866-3838</p>
-  <p>Serving the community since 1967</p>
+
+  <p>
+    650 West Ave, Norwalk, CT 06850
+    &nbsp; | &nbsp;
+    <a href="tel:2038663838">203-866-3838</a>
+  </p>
+
+  <p>
+    <a href="mailto:dannhearing67@gmail.com">
+      dannhearing67@gmail.com
+    </a>
+  </p>
+
+  <p>Serving Fairfield County since 1967</p>
 </footer>
 
 </body>
